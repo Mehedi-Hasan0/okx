@@ -150,7 +150,7 @@ const logoData = [
     textLabel: "Kataninu",
   },
   {
-    icon: "/assets/images/baby-doge-logo.png",
+    icon: "/assets/icons/okx-logo.svg",
     textLabel: "babydoge",
   },
 ];
@@ -158,7 +158,7 @@ const logoData = [
 const whiteListBtn = [
   {
     textLabel: "whitelist now",
-    bgColor: "#FFD026",
+    bgColor: "#00FF00",
     textSize: "text-sm lg:text-base 2xl:text-xl ",
     innerBtnPadding: "px-10 h-8",
     bgVariantType: "#232323",
