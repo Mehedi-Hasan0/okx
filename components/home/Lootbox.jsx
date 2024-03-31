@@ -126,7 +126,7 @@ export default function Lootbox() {
       />
       {/* right frame overlay */}
       <div
-        className="bg-[url('/assets/images/lootCard-frame.png')] w-[50%] absolute z-[2] right-0 top-10 bg-no-repeat hidden lg:block"
+        className="bg-[url('/assets/images/lootCard-frame.png')] w-[50%] absolute z-[2] right-0 top-10 bg-no-repeat hidden lg:block opacity-90"
         style={{
           height: `${mainContentHeight}px`,
         }}
@@ -155,7 +155,7 @@ export default function Lootbox() {
                   height={46}
                   className="w-7 sm:w-11"
                 />
-                <span className="text-yellow2">BabyDoge</span> Loot Box
+                <span className="text-green">BabyDoge</span> Loot Box
               </h2>
             </motion.div>
             {/* left card */}
@@ -169,28 +169,17 @@ export default function Lootbox() {
               // }}
             >
               {/* video player */}
-              <Modal>
-                <ModalTrigger asChild>
-                  <div className="group relative flex justify-center items-center cursor-pointer">
-                    <Image
-                      src={"/assets/images/videoPlayer.webp"}
-                      alt="video player"
-                      width={642}
-                      height={365}
-                    />
-                    {/* // icon */}
-                    <div className="absolute z-[2] w-[72px] h-[72px] border-[1.5px] rounded-full border-transparent group-hover:border-white/40 transition duration-300 ease-in">
-                      <Image
-                        src={"/assets/icons/videoPlayerIcon.svg"}
-                        alt="player icon"
-                        width={76}
-                        height={76}
-                      />
-                    </div>
-                  </div>
-                </ModalTrigger>
-                <ModalContent>{"7nykO0FzsVQ"}</ModalContent>
-              </Modal>
+
+              <video
+                src="http://res.cloudinary.com/dlhexsnxq/video/upload/v1709961388/bannerbg_xgkahv.mp4"
+                autoPlay
+                muted
+                loop
+                poster="/assets/images/thumbnail2.png"
+                width={"100%"}
+                height={"100%"}
+                className="object-cover aspect-video max-h-[350px]"
+              />
 
               {/* white list btn */}
               {whiteListBtn.map((btn, i) => (
@@ -213,9 +202,9 @@ export default function Lootbox() {
                 <Image
                   src={"/assets/images/lootBox-ch.png"}
                   alt="babydoge character"
-                  width={995}
-                  height={315}
-                  className="w-[400px] sm:w-full min-h-[250px] object-cover sm:object-contain z-[1] block lg:hidden"
+                  width={307}
+                  height={270}
+                  className="w-[400px] sm:w-full min-h-[250px] object-cover sm:object-contain z-[1]"
                 />
                 {/* bg overlay */}
                 <div className="w-full h-1/2 absolute bottom-0 z-[2] bg-gradient-to-b from-transparent to-black" />
@@ -231,7 +220,7 @@ export default function Lootbox() {
             className="flex-1 relative z-20 lg:max-w-[715px] lg:w-[50%] py-8 lg:py-0  px-6 sm:px-10 md:px-12 lg:pr-16 lg:px-0"
           >
             <div className="flex flex-col justify-between gap-5 ">
-              <h4 className="font-jost font-semibold italic text-xl sm:text-sxl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] uppercase text-yellow2 my-2 lg:my-8 text-center relative z-10">
+              <h4 className="font-jost font-semibold italic text-xl sm:text-sxl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] uppercase text-green my-2 lg:my-8 text-center relative z-10">
                 utilities
               </h4>
               {lootboxData.map((data, i) => (
@@ -292,13 +281,13 @@ export default function Lootbox() {
                         <div
                           className={` ${
                             imgParentHover[i]
-                              ? "bg-[url('/assets/icons/lootbox/loot-text-bg-grad.png')]"
+                              ? " bg-[url('/assets/icons/lootbox/loot-text-bg.png')] opacity-60"
                               : " bg-[url('/assets/icons/lootbox/loot-text-bg.png')]"
                           } transition-all duration-700 ease-in-out bg-cover mr-1 max-w-[318px]`}
                         >
                           <p
                             className={`py-2 text-black text-nowrap text-[10px] sm:text-sm ml-2 xl:ml-4 font-bold ${
-                              imgParentHover[i] ? "text-white" : "text-black "
+                              imgParentHover[i] ? "text-black" : "text-black "
                             } transition-all duration-500 ease-in-out`}
                           >
                             {data.title}
@@ -306,7 +295,7 @@ export default function Lootbox() {
                         </div>
                         <p
                           className={`text-xs sm:text-base xl:text-lg font-medium max-w-[326px] text-white xl:ml-6 ${
-                            imgParentHover[i] ? "text-yellow2" : "text-white "
+                            imgParentHover[i] ? "text-green" : "text-white "
                           } transition-all duration-500 ease-in-out`}
                         >
                           {data.desc}
@@ -323,17 +312,8 @@ export default function Lootbox() {
           </div>
         </div>
       </div>
-      {/* left card character */}
-      <Image
-        src={"/assets/images/lootBox-ch.png"}
-        alt="babydoge character"
-        width={995}
-        height={315}
-        className="absolute w-1/2 xl:w-[57%] 2xl:w-1/2 min-h-[240px] xl:min-h-[320px] bottom-0 left-0 lg:object-cover 2xl:object-contain z-[1] hidden lg:block"
-      />
-
       {/* border top */}
-      <div className="absolute w-[10%] h-[3px] bg-yellow2 top-8 lg:top-0 left-0" />
+      <div className="absolute w-[10%] h-[3px] bg-green top-8 lg:top-0 left-0" />
     </div>
   );
 }
@@ -341,7 +321,7 @@ export default function Lootbox() {
 const whiteListBtn = [
   {
     textLabel: "whitelist now",
-    bgColor: "#FFD026",
+    bgColor: "#00ff00",
     textSize: "text-sm lg:text-base 2xl:text-xl ",
     innerBtnPadding: "px-10 h-8",
     bgVariantType: "#232323",
