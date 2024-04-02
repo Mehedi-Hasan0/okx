@@ -30,7 +30,7 @@ export default function Media() {
           // }}
         >
           <Image
-            src={"/assets/icons/text-top-yellow.svg"}
+            src={"/assets/icons/text-top-green.svg"}
             alt=""
             width={310}
             height={14}
@@ -114,7 +114,7 @@ export default function Media() {
 const whiteListBtn = [
   {
     textLabel: "whitelist now",
-    bgColor: "#FFD026",
+    bgColor: "#00FF00",
     textSize: "text-sm lg:text-base 2xl:text-xl ",
     innerBtnPadding: "px-10 h-8",
     bgVariantType: "#232323",
