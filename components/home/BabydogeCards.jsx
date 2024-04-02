@@ -51,18 +51,18 @@ export default function BabydogeCards() {
           // }}
         >
           <Image
-            src={"/assets/icons/text-top-yellow.svg"}
+            src={"/assets/icons/text-top-green.svg"}
             alt=""
             width={310}
             height={14}
           />
-          <h5 className="uppercase text-base sm:text-lg md:text-xl font-bold">
-            BABYDOGE
+          <h5 className="uppercase text-base sm:text-lg md:text-xl font-bold tracking-[8px]">
+            okx chain
           </h5>
         </motion.div>
 
-        <div className="flex flex-col-reverse lg:flex-row gap-5 sm:gap-10 items-center">
-          <div className="flex flex-col gap-7 sm:gap-10 relative z-[7]">
+        <div className="flex flex-col-reverse lg:flex-row gap-5 sm:gap-10 items-center 2xl:px-28">
+          <div className="flex flex-col gap-7 sm:gap-10 relative z-[7] w-full lg:w-1/2">
             {babydogeCaracters.map((ch, i) => (
               <motion.div
                 key={i}
@@ -88,6 +88,7 @@ export default function BabydogeCards() {
           </div>
           {/*  */}
           <motion.div
+            className="w-full lg:w-1/2 relative"
             variants={textVariant}
             initial="initial"
             whileInView="animate"
@@ -98,10 +99,11 @@ export default function BabydogeCards() {
             <Image
               src={"/assets/images/babydoge-ch.webp"}
               alt=""
-              width={1056}
-              height={1086}
-              className="relative bottom-7 sm:bottom-7 lg:ml-10 lg:bottom-16 z-[1]"
+              width={756}
+              height={786}
+              className="relative bottom-7 sm:bottom-7 lg:ml-10 lg:bottom-16 z-[1] lg:right-0 mx-auto lg:mx-0"
             />
+            <div className="block lg:hidden absolute bottom-0 left-0 w-full h-2/5 bg-gradient-to-b from-transparent to-black z-[2]" />
           </motion.div>
         </div>
       </div>
