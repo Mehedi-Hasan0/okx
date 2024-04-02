@@ -155,7 +155,7 @@ export default function Lootbox() {
                   height={46}
                   className="w-7 sm:w-11"
                 />
-                <span className="text-green">BabyDoge</span> Loot Box
+                <span className="text-green">OKX Chain</span> Loot Box
               </h2>
             </motion.div>
             {/* left card */}
@@ -175,7 +175,7 @@ export default function Lootbox() {
                 autoPlay
                 muted
                 loop
-                poster="/assets/images/thumbnail2.png"
+                poster="/assets/images/video-poster.webp"
                 width={"100%"}
                 height={"100%"}
                 className="object-cover aspect-video max-h-[350px]"

@@ -151,7 +151,7 @@ const logoData = [
   },
   {
     icon: "/assets/icons/okx-logo.svg",
-    textLabel: "babydoge",
+    textLabel: "okx chain",
   },
 ];
 

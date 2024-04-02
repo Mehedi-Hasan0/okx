@@ -58,7 +58,7 @@ export default function LootBoxDetails() {
                   height={46}
                   className="w-7 sm:w-11"
                 />
-                <span className="text-yellow2">BabyDoge</span> Loot Box
+                <span className="text-green">OKX Chain</span> Loot Box
               </h2>
               {/*  */}
               <div className="mt-5 md:mt-4 2xl:mt-9 w-full">
@@ -70,7 +70,7 @@ export default function LootBoxDetails() {
                     </p>
                     <div className="border border-white bg-[#434343]/40 w-full">
                       <p className="py-4 px-8 lg:px-4 xl:px-8 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl ">
-                        <span className="text-yellow2 font-bold">Supply:</span>{" "}
+                        <span className="text-green font-bold">Supply:</span>{" "}
                         10,000 Loot Boxes
                       </p>
                     </div>
@@ -83,8 +83,8 @@ export default function LootBoxDetails() {
                     </p>
                     <div className="border border-white bg-[#434343]/40">
                       <p className="py-4 px-8 lg:px-4 xl:px-8 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
-                        <span className="text-yellow2 font-bold">Price:</span>{" "}
-                        $15 for whitelisted Wallets
+                        <span className="text-green font-bold">Price:</span> $15
+                        for whitelisted Wallets
                       </p>
                     </div>
                   </div>
@@ -96,14 +96,14 @@ export default function LootBoxDetails() {
                     <div className="flex items-center gap-4 xl:gap-8 2xl:gap-20 w-full">
                       <div className="border border-white bg-[#434343]/40 flex-1">
                         <p className="py-4 px-8 lg:px-4 xl:px-8 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
-                          <span className="text-yellow2 font-bold">CHAIN:</span>{" "}
+                          <span className="text-green font-bold">CHAIN:</span>{" "}
                           BNB
                         </p>
                       </div>
                       {/*  */}
                       <div className="border border-white bg-[#434343]/40 flex-1">
                         <p className="py-4 px-8 lg:px-4 xl:px-8 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
-                          <span className="text-yellow2 font-bold">
+                          <span className="text-green font-bold">
                             Mint Date:
                           </span>{" "}
                           TBA
@@ -118,7 +118,7 @@ export default function LootBoxDetails() {
                 {/*  */}
                 <div className="flex flex-col items-center">
                   <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-extrabold">
-                    <span className="text-yellow2">1 Mint =</span> 1 Character 1
+                    <span className="text-green">1 Mint =</span> 1 Character 1
                     Sword
                   </p>
                   <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-center">
@@ -127,7 +127,7 @@ export default function LootBoxDetails() {
                 </div>
                 {/*  */}
                 <div className="flex flex-col items-center">
-                  <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-extrabold text-yellow2">
+                  <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-extrabold text-green">
                     Mint NFT
                   </p>
                   <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-center">
@@ -163,7 +163,7 @@ export default function LootBoxDetails() {
           <div className="w-full lg:w-[50%] xl:w-[45%] px-6 sm:px-10 md:px-12 lg:pr-16 flex flex-col items-center gap-8 sm:gap-20 md:gap-32 pt-20 lg:pt-0 md:mt-16 justify-evenly">
             {/* 1st card */}
             <div className="bg-[url('/assets/images/loot-box-detail-card-frame.png')]  bg-contain sm:bg-contain bg-no-repeat min-w-[340px] sm:min-w-[550px] md:min-w-[673px] lg:min-w-[460px] xl:min-w-[580px] xl:min-h-[300px] 2xl:min-w-[673px] 2xl:h-[261px] relative">
-              <p className="text-white/70 text-xs sm:text-base md:text-xl lg:text-base py-8 px-5 sm:py-12 sm:px-10 md:py-12 md:px-10 lg:py-7 lg:px-6 xl:py-12 xl:px-10 2xl:py-16 2xl:px-14 max-w-[250px] sm:max-w-[390px] md:max-w-[398px] lg:max-w-[350px] xl:max-w-[398px] relative z-10 bottom-2 sm:bottom-3">
+              <p className="text-white/70 text-xs sm:text-base md:text-xl lg:text-base py-8 px-5 sm:py-12 sm:px-10 md:py-12 md:px-10 lg:py-7 lg:px-6 xl:py-12 xl:px-10 2xl:py-16 2xl:px-14 max-w-[250px] sm:max-w-[390px] md:max-w-[498px] lg:max-w-[350px] xl:max-w-[398px] relative z-10 bottom-2 sm:bottom-3">
                 We have designed the special In-game character to show our
                 tribute to the great Baby Doge community and now the community
                 members can also claim one of their own through our NFT
@@ -174,16 +174,16 @@ export default function LootBoxDetails() {
                 alt=""
                 width={600}
                 height={487}
-                className="absolute z-[2] w-[500px] -bottom-10 -right-16 sm:w-[600px] sm:-bottom-20 sm:-right-28 md:-bottom-28 md:-right-28 md:w-[700px] lg:w-[400px] lg:-bottom-10 lg:-right-20 xl:w-[500px] xl:bottom-0 xl:-right-16 2xl:-bottom-28 2xl:-right-28 2xl:w-[700px]"
+                className="absolute z-[2] w-[220px] -bottom-10 -right-16 sm:w-[350px] sm:-bottom-20 sm:-right-20 md:-bottom-28 md:-right-20 md:w-[450px] lg:w-[270px] lg:-bottom-10 lg:-right-20 xl:w-[350px] xl:bottom-0 xl:-right-20 2xl:-bottom-28 2xl:-right-20 2xl:w-[480px]"
               />
             </div>
             {/* 2nd card */}
             <div className="bg-[url('/assets/images/loot-box-detail-card-frame.png')]  bg-contain sm:bg-contain bg-no-repeat min-w-[340px] sm:min-w-[550px] md:min-w-[673px] lg:min-w-[460px] xl:min-w-[580px] xl:min-h-[300px] 2xl:min-w-[673px] 2xl:h-[261px] relative">
-              <p className="text-white/70 text-xs sm:text-base md:text-xl lg:text-base py-8 px-5 sm:py-12 sm:px-10 md:py-12 md:px-10 lg:py-7 lg:px-6 xl:py-12 xl:px-10 2xl:py-16 2xl:px-14 max-w-[250px] sm:max-w-[390px] md:max-w-[398px] lg:max-w-[350px] xl:max-w-[398px] relative z-10 bottom-2 sm:bottom-3">
+              <p className="text-white/70 text-xs sm:text-base md:text-xl lg:text-base py-8 px-5 sm:py-12 sm:px-10 md:py-12 md:px-10 lg:py-7 lg:px-6 xl:py-12 xl:px-10 2xl:py-16 2xl:px-14 max-w-[250px] sm:max-w-[390px] md:max-w-[498px] lg:max-w-[350px] xl:max-w-[398px] relative z-10 bottom-2 sm:bottom-3">
                 Once you mint a Loot Box, you will get a Character and you will
                 get an additional free Weapon NFT.
                 <br />
-                <span className="text-yellow2">
+                <span className="text-green">
                   For the price of one Loot Box, you will get 2 NFTs!
                 </span>
               </p>
@@ -192,7 +192,7 @@ export default function LootBoxDetails() {
                 alt=""
                 width={600}
                 height={487}
-                className="absolute z-[2] w-[200px] -bottom-10 -right-14 sm:w-[350px] sm:-bottom-20 sm:-right-28 -md:-bottom-16 md:-right-28 md:w-[400px] lg:w-[260px] lg:-bottom-16 lg:-right-20 xl:w-[370px] xl:-bottom-5 xl:-right-20 2xl:-bottom-16 2xl:-right-28 2xl:w-[460px]"
+                className="absolute z-[2] w-[200px] -bottom-10 -right-14 sm:w-[350px] sm:-bottom-20 sm:-right-20 -md:-bottom-16 md:-right-20 md:w-[400px] lg:w-[260px] lg:-bottom-16 lg:-right-20 xl:w-[370px] xl:-bottom-5 xl:-right-20 2xl:-bottom-16 2xl:-right-20 2xl:w-[460px]"
               />
             </div>
           </div>
@@ -208,7 +208,7 @@ export default function LootBoxDetails() {
 const whiteListBtn = [
   {
     textLabel: "whitelist now",
-    bgColor: "#FFD026",
+    bgColor: "#00FF00",
     textSize: "text-sm lg:text-base 2xl:text-xl ",
     innerBtnPadding: "px-10 h-8",
     bgVariantType: "#232323",
