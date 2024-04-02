@@ -53,7 +53,7 @@ export default function Ecosystem() {
 
   return (
     <motion.section
-      className="text-white overflow-hidden lg:bg-[url('/assets/images/banner-bg-3.webp')] bg-cover bg-center relative"
+      className="text-white overflow-hidden lg:bg-[url('/assets/images/3rd-sec-banner.webp')] bg-cover bg-center relative"
       variants={textVariant}
       initial="initial"
       whileInView="animate"
@@ -74,7 +74,7 @@ export default function Ecosystem() {
             <div className="w-full flex flex-col gap-5 sm:gap-7 lg:gap-9 xl:gap-10">
               <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-semibold text-center">
                 Katana Inu is a{" "}
-                <span className="text-yellow2">MMO NFT PC Game</span>
+                <span className="text-green">MMO NFT PC Game</span>
               </h3>
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl text-[#D0D4EA] text-center">
                 Check for Katana Inu Ecosystem for Renting, Staking, our
@@ -175,7 +175,7 @@ export default function Ecosystem() {
                         <Button
                           variant="customAnimated"
                           style={{
-                            "--gradClr": "#FFD026",
+                            "--gradClr": "#00FF00",
                             "--hoverClr": "#000000",
                           }}
                           className={`w-full h-5 uppercase font-extrabold rounded-none bg-[#1a1a1a] text-sm text-[#ffffff]`}
@@ -195,14 +195,15 @@ export default function Ecosystem() {
         </div>
 
         {/* right content */}
-        <div className="w-full lg:w-[50%] relative z-10 bg-[url('/assets/images/babydoge-text-bg.webp')] bg-cover">
+        <div className="w-full lg:w-[50%] relative z-10">
           <Image
             src={"/assets/images/ecosystem-ch.webp"}
             alt=""
             width={1041}
             height={944}
-            className=""
+            className="relative z-[2]"
           />
+          <div className="w-[50%] h-full absolute top-0 right-0 z-[1] bg-[url('/assets/images/3rd-sec-top-right-layer.webp')] object-contain" />
         </div>
       </div>
     </motion.section>
@@ -211,7 +212,7 @@ export default function Ecosystem() {
 const mintSoonBtn = [
   {
     textLabel: "Mint soon",
-    bgColor: "#FFD026",
+    bgColor: "#00FF00",
     textSize: "text-sm lg:text-base 2xl:text-xl ",
     innerBtnPadding: "px-10 h-8",
     bgVariantType: "#232323",
