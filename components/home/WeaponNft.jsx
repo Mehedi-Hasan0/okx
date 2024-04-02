@@ -7,8 +7,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
-import { Autoplay } from "swiper/modules";
+import "swiper/css/navigation";
+import { Autoplay, Navigation } from "swiper/modules";
 import { weaponNftData } from "@/data";
 
 export default function WeaponNft() {
@@ -29,7 +29,7 @@ export default function WeaponNft() {
 
   useEffect(() => {
     import("swiper").then((SwiperModule) => {
-      SwiperModule.default.use([Autoplay]);
+      SwiperModule.default.use([Autoplay, Navigation]);
       setSwiperLoaded(true);
     });
 
@@ -64,18 +64,18 @@ export default function WeaponNft() {
       <div className="main-container relative z-10">
         <div className="py-8 flex flex-col justify-center items-center">
           <Image
-            src={"/assets/icons/text-top-yellow.svg"}
+            src={"/assets/icons/text-top-green.svg"}
             alt=""
             width={310}
             height={14}
           />
-          <h5 className="uppercase text-base sm:text-lg md:text-xl font-bold tracking-[8px]">
-            Weapon nfts
+          <h5 className="uppercase text-base sm:text-lg md:text-xl font-bold tracking-[5px]">
+            Sword nft
           </h5>
         </div>
 
         {/* slider */}
-        <div className=" text-black">
+        <div className=" text-black xl:px-28 2xl:px-72">
           <Swiper
             slidesPerView={slides}
             spaceBetween={30}
@@ -87,7 +87,8 @@ export default function WeaponNft() {
             pagination={{
               clickable: true,
             }}
-            modules={[Autoplay]}
+            navigation={true}
+            modules={[Autoplay, Navigation]}
             onSlideChange={handleSlideChange}
             initialSlide={2}
             // modules={[Pagination]}
@@ -111,7 +112,16 @@ export default function WeaponNft() {
                     height={744}
                     className={`${
                       activeSlide === i ? "block absolute" : "hidden"
-                    } max-h-[600px] object-contain`}
+                    } max-h-[600px] object-contain grayscale`}
+                  />
+                  <Image
+                    src={"/assets/images/weapon/sparkle.png"}
+                    alt=""
+                    width={252}
+                    height={744}
+                    className={`${
+                      activeSlide === i ? "block absolute opacity-20" : "hidden"
+                    } max-h-[600px] object-contain grayscale`}
                   />
 
                   {/* sword */}
@@ -134,7 +144,7 @@ export default function WeaponNft() {
       </div>
 
       {/* border top */}
-      <div className="absolute w-[10%] h-[3px] top-0 left-0 bg-yellow2" />
+      <div className="absolute w-[10%] h-[3px] top-0 left-0 bg-green" />
     </section>
   );
 }

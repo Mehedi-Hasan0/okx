@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
+import FullWidthBorder from "../shared/FullWidthBorder";
 
 export default function BabydogeCards() {
   const textVariant = {
@@ -110,6 +111,11 @@ export default function BabydogeCards() {
 
       {/* shadow overlay */}
       <div className="w-full h-[50%] bg-gradient-to-b from-transparent to-black absolute bottom-0 z-[6] lg:block hidden" />
+
+      {/* border top */}
+      <div className="absolute top-0 left-0 w-full">
+        <FullWidthBorder />
+      </div>
     </section>
   );
 }

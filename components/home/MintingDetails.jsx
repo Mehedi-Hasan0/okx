@@ -110,10 +110,10 @@ export default function MintingDetails() {
       {/* main content */}
       <div ref={mainContentRef} className="main-container relative z-10 ">
         {/* btn */}
-        <div className="py-12 sm:py-8 md:pt-10 flex flex-col justify-center items-center gap-7">
+        <div className="py-12 sm:py-8 md:pt-10 flex flex-col justify-center items-center gap-7 mb-10 lg:mb-0">
           <div>
             <Image
-              src={"/assets/icons/text-top-yellow.svg"}
+              src={"/assets/icons/text-top-green.svg"}
               alt=""
               width={310}
               height={14}
@@ -122,10 +122,10 @@ export default function MintingDetails() {
               Mint Here
             </h5>
           </div>
-          <div>
+          <div className="mb-10 lg:mb-0">
             <p className="text-lg sm:text-xl md:text-2xl font-light text-white/80 text-center leading-5 sm:leading-normal mb-1 lg:mb-0">
               In this lootbox, you will mint{" "}
-              <span className="text-yellow2 font-medium">1 random NFT</span> of
+              <span className="text-green font-medium">1 random NFT</span> of
               character or sword
             </p>
             <p className="text-xs sm:text-sm md:text-base text-white/80 text-center">
@@ -135,10 +135,10 @@ export default function MintingDetails() {
           </div>
         </div>
         {/* content */}
-        <div className="flex flex-col justify-center items-center lg:justify-start lg:items-start lg:flex-row relative gap-10 lg:gap-0">
-          <div className="lg:w-[22%] xl:w-[25%] 2xl:w-[30%] relative bottom-20 lg:bottom-10">
+        <div className="flex flex-col justify-center items-center lg:justify-start lg:items-start lg:flex-row relative sm:gap-10 lg:gap-0">
+          <div className="lg:w-[22%] xl:w-[25%] 2xl:w-[30%] relative bottom-40 lg:bottom-10">
             <Image
-              src={"/assets/images/mint-ch-1.png"}
+              src={"/assets/images/mint-ch-1.webp"}
               alt=""
               width={617}
               height={899}
@@ -204,7 +204,7 @@ export default function MintingDetails() {
                     Total Available (Sold/Total)
                   </p>
                   <p className="text-base md:text-lg lg:text-xl xl:text-[28px] text-white font-bold">
-                    <span className="text-[#F9C306]">{miningNumber}</span>/
+                    <span className="text-green">{miningNumber}</span>/
                     {totalMiningNumber}
                   </p>
                 </div>
@@ -212,7 +212,7 @@ export default function MintingDetails() {
                 {/* radial progress */}
                 <div className=" rounded-full bg-[#30373F]">
                   <div
-                    className="radial-progress text-[#F9C306]"
+                    className="radial-progress text-green"
                     style={{ "--value": percentageOfMining }}
                     role="progressbar"
                   >
@@ -231,7 +231,7 @@ export default function MintingDetails() {
                 <div className="flex flex-col gap-2 md:gap-3 lg:gap-4 xl:gap-5">
                   <div className="flex flex-col gap-2 md:gap-3 lg:gap-4">
                     <p className="text-white text-sm md:text-base lg:text-lg font-semibold tracking-wide">
-                      <span className="text-[#F9C306]">Print</span>/Mint:
+                      <span className="text-green">Print</span>/Mint:
                     </p>
 
                     {/* ethereum text */}
@@ -243,7 +243,7 @@ export default function MintingDetails() {
                         height={32}
                       />
 
-                      <p className="px-4 py-1 rounded-full bg-[#F9C306] text-[#15131D] capitalize">
+                      <p className="px-4 py-1 rounded-full bg-green text-[#15131D] capitalize">
                         ethereum
                       </p>
                     </div>
@@ -251,7 +251,7 @@ export default function MintingDetails() {
                 </div>
 
                 <div className="flex flex-row items-center gap-10">
-                  <h4 className="text-sm md:text-base lg:text-lg xl:text-xl font-bold text-[#F9C306]">
+                  <h4 className="text-sm md:text-base lg:text-lg xl:text-xl font-bold text-green">
                     0.04 Ethereum{" "}
                     <span className="font-normal text-sm md:text-base lg:text-lg 2xl:text-xl text-white">
                       (0.04 ETH)
@@ -297,7 +297,7 @@ export default function MintingDetails() {
                 </div>
                 {/* public sale */}
                 <div className="flex flex-col gap-5 md:gap-6 lg:gap-6 xl:gap-5 2xl:gap-6 lg:px-10 mt-4 md:mt-0">
-                  <button className="px-3 py-2 md:px-4 lg:px-5 lg:py-3 2xl:px-6 2xl:py-4 bg-[#322907] hover:bg-[#4d4012] transition duration-200 ease-in uppercase rounded-md text-white font-medium w-full">
+                  <button className="px-3 py-2 md:px-4 lg:px-5 lg:py-3 2xl:px-6 2xl:py-4 bg-[#023302] hover:bg-[#123912] transition duration-200 ease-in uppercase rounded-md text-white font-medium w-full">
                     public sale
                   </button>
 
@@ -323,15 +323,11 @@ export default function MintingDetails() {
 
                   <div className="flex items-center justify-between gap-5 md:gap-8 px-5">
                     <p className="text-sm md:text-base text-white uppercase">
-                      <span className="text-[#F9C306] font-semibold">
-                        Price:
-                      </span>{" "}
+                      <span className="text-green font-semibold">Price:</span>{" "}
                       0.04 ETH
                     </p>
                     <p className="text-sm md:text-base text-white uppercase">
-                      <span className="text-[#F9C306] font-semibold">
-                        Limit:
-                      </span>{" "}
+                      <span className="text-green font-semibold">Limit:</span>{" "}
                       75 NFTs
                     </p>
                   </div>
@@ -341,9 +337,9 @@ export default function MintingDetails() {
             {/* ////////////////////////////////////////////// */}
           </div>
           {/* avatar */}
-          <div className="lg:w-[22%] xl:w-[25%] 2xl:w-[30%] relative bottom-10 lg:bottom-10">
+          <div className="lg:w-[22%] xl:w-[25%] 2xl:w-[30%] relative bottom-16 lg:bottom-10">
             <Image
-              src={"/assets/images/mint-ch-2.png"}
+              src={"/assets/images/mint-ch-2.webp"}
               alt=""
               width={531}
               height={805}
@@ -377,7 +373,7 @@ export const avatarData = [
 const whiteListBtn = [
   {
     textLabel: "whitelist now",
-    bgColor: "#FFD026",
+    bgColor: "#00FF00",
     textSize: "text-sm lg:text-base 2xl:text-xl ",
     innerBtnPadding: "px-10 h-8",
     bgVariantType: "#232323",
