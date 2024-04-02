@@ -69,7 +69,7 @@ export default function WeaponNft() {
             width={310}
             height={14}
           />
-          <h5 className="uppercase text-base sm:text-lg md:text-xl font-bold tracking-[5px]">
+          <h5 className="uppercase text-base sm:text-lg md:text-xl font-bold tracking-[8px]">
             Weapon nfts
           </h5>
         </div>

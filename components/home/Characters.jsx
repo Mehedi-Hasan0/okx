@@ -114,13 +114,13 @@ export default function Characters() {
           // }}
         >
           <Image
-            src={"/assets/icons/text-top-yellow.svg"}
+            src={"/assets/icons/text-top-green.svg"}
             alt=""
             width={310}
             height={14}
           />
-          <h5 className="uppercase text-base sm:text-lg md:text-xl font-bold">
-            BABYDOGE
+          <h5 className="uppercase text-base sm:text-lg md:text-xl font-bold tracking-[8px]">
+            OKX chain
           </h5>
         </motion.div>
 
@@ -180,14 +180,14 @@ export default function Characters() {
                     ref={detailBoxRef}
                     onMouseEnter={() => handleMouseEnter(i)}
                     onMouseLeave={() => handleMouseLeave(i)}
-                    className={`bg-gradient-to-b from-[#DBDBDB] to-[#DBDBDB]/0 relative min-h-[240px] min-w-[200px] flex justify-center items-center cursor-pointer ${
+                    className={`bg-gradient-to-b from-[#DBDBDB] to-[#DBDBDB]/0 relative min-h-[240px] min-w-[200px] 2xl:min-w-[270px] flex justify-center items-center cursor-pointer ${
                       detailBoxHover[i] ? "opacity-95" : "opacity-85 "
                     }`}
                   >
                     <div className="absolute top-0 left-0 w-full h-full z-[1] blur-3xl bg-black/80" />
                     {/* bg-gradient-to-b from-[#2B2A2A]/95 to-[#000000] */}
                     <div
-                      className={`min-w-[198px] min-h-[238px] flex flex-col items-center pt-7 transition-all duration-700 ease-in-out relative z-10 ${
+                      className={`min-w-[198px] min-h-[238px] 2xl:min-w-[268px] flex flex-col items-center pt-7 transition-all duration-700 ease-in-out relative z-10 ${
                         detailBoxHover[i]
                           ? "hover:bg-[#482300]/85"
                           : "bg-[#000000]/80"
@@ -208,7 +208,7 @@ export default function Characters() {
                       />
                       <div className="absolute bottom-0 left-0 min-h-[34px] min-w-[200px] bg-gradient-to-b from-[#DBDBDB] to-[#DBDBDB]/0 flex justify-center items-center">
                         <div
-                          className={`min-w-[198px] min-h-[32px] flex items-center justify-between px-2 transition-all duration-700 ease-in-out ${
+                          className={`min-w-[198px] min-h-[32px] 2xl:min-w-[270px] flex items-center justify-between px-2 transition-all duration-700 ease-in-out ${
                             detailBoxHover[i]
                               ? "bg-[#a92700]/60"
                               : "bg-[#000000]/80"

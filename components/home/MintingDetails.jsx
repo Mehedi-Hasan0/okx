@@ -118,7 +118,7 @@ export default function MintingDetails() {
               width={310}
               height={14}
             />
-            <h5 className="uppercase text-base sm:text-lg md:text-xl font-bold tracking-[5px] text-center">
+            <h5 className="uppercase text-base sm:text-lg md:text-xl font-bold tracking-[8px] text-center">
               Mint Here
             </h5>
           </div>

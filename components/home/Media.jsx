@@ -35,7 +35,7 @@ export default function Media() {
             width={310}
             height={14}
           />
-          <h5 className="uppercase text-base sm:text-lg md:text-xl font-bold tracking-[5px]">
+          <h5 className="uppercase text-base sm:text-lg md:text-xl font-bold tracking-[8px]">
             Media
           </h5>
         </motion.div>

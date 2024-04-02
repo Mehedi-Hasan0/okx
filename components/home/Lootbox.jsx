@@ -252,7 +252,7 @@ export default function Lootbox() {
                     <div
                       onMouseEnter={() => handleMouseEnter(i)}
                       onMouseLeave={() => handleMouseLeave(i)}
-                      className={`flex items-center gap-1 xl:gap-3`}
+                      className={`flex items-center gap-1 xl:gap-3 group`}
                     >
                       {/* polygon shap */}
                       <div className="outer-polygon w-[100px] sm:w-[120px] lg:w-[104px] xl:w-[137px] aspect-square bg-[#A6A6A6]/10 p-3 flex justify-center items-center relative">
@@ -275,28 +275,23 @@ export default function Lootbox() {
                       {/* right content */}
 
                       <div
-                        onMouseEnter={() => handleMouseEnter(i)}
+                        // onMouseEnter={() => handleMouseEnter(i)}
                         className="flex flex-col gap-2 w-fit"
                       >
                         <div
-                          className={` ${
-                            imgParentHover[i]
-                              ? " bg-[url('/assets/icons/lootbox/loot-text-bg.png')] opacity-60"
-                              : " bg-[url('/assets/icons/lootbox/loot-text-bg.png')]"
-                          } transition-all duration-700 ease-in-out bg-cover mr-1 max-w-[318px]`}
+                          className={` 
+                          
+bg-[url('/assets/icons/lootbox/loot-text-bg.png')] group-hover:bg-[url('/assets/icons/lootbox/loot-text-bg.png')] group-hover:opacity-60
+                           transition-all duration-700 ease-in-out bg-cover mr-1 max-w-[318px]`}
                         >
                           <p
-                            className={`py-2 text-black text-nowrap text-[10px] sm:text-sm ml-2 xl:ml-4 font-bold ${
-                              imgParentHover[i] ? "text-black" : "text-black "
-                            } transition-all duration-500 ease-in-out`}
+                            className={`py-2 text-black text-nowrap text-[10px] sm:text-sm ml-2 xl:ml-4 font-bold transition-all duration-500 ease-in-out`}
                           >
                             {data.title}
                           </p>
                         </div>
                         <p
-                          className={`text-xs sm:text-base xl:text-lg font-medium max-w-[326px] text-white xl:ml-6 ${
-                            imgParentHover[i] ? "text-green" : "text-white "
-                          } transition-all duration-500 ease-in-out`}
+                          className={`text-xs sm:text-base xl:text-lg font-medium max-w-[326px] xl:ml-6 text-white group-hover:text-green transition-all duration-500 ease-in-out`}
                         >
                           {data.desc}
                         </p>
@@ -321,7 +316,7 @@ export default function Lootbox() {
 const whiteListBtn = [
   {
     textLabel: "whitelist now",
-    bgColor: "#00ff00",
+    bgColor: "#00FF00",
     textSize: "text-sm lg:text-base 2xl:text-xl ",
     innerBtnPadding: "px-10 h-8",
     bgVariantType: "#232323",
