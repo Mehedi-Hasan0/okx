@@ -47,7 +47,7 @@ export default function Wallet() {
           <p className="tex-xs sm:text-base md:text-lg lg:text-[22px] font-light text-center">
             Trade with world’s most trusted and fastest wallets
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-yellowRed font-medium">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-green font-medium">
             Wallets We Support
           </h2>
         </motion.div>
@@ -73,7 +73,7 @@ export default function Wallet() {
         {/* how it works */}
         <div className=" flex flex-col justify-center items-center gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-14 mt-12 sm:mt-16 md:mt-20 lg:mt-24 xl:mt-32">
           <motion.h2
-            className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-yellowRed font-medium"
+            className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-green font-medium"
             variants={textVariant}
             initial="initial"
             whileInView="animate"
@@ -135,19 +135,19 @@ const walletData = [
 
 const howItWorksData = [
   {
-    icon: "/assets/icons/wallet/works-icon-1.png",
+    icon: "/assets/icons/wallet/works-icon-1.svg",
     label: "Set up your wallet",
   },
   {
-    icon: "/assets/icons/wallet/works-icon-2.png",
+    icon: "/assets/icons/wallet/works-icon-2.svg",
     label: "Create your collection",
   },
   {
-    icon: "/assets/icons/wallet/works-icon-3.png",
+    icon: "/assets/icons/wallet/works-icon-3.svg",
     label: "Add your NFTs",
   },
   {
-    icon: "/assets/icons/wallet/works-icon-4.png",
+    icon: "/assets/icons/wallet/works-icon-4.svg",
     label: "List them for sale",
   },
 ];
