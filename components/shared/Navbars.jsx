@@ -64,11 +64,11 @@ export default function Navbars() {
           showScrollNav ? "fixed animate-fade-in" : "absolute"
         }`}
       >
-        <div className="main-container py-4 2xl:py-5 ">
+        <div className="main-container py-2 sm:py-4 2xl:py-5 ">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex flex-row">
-              <div className=" min-w-[60px] lg:min-w-[80px] 2xl:min-w-[120px]">
+              <div className=" min-w-[40px] sm:min-w-[60px] lg:min-w-[80px] 2xl:min-w-[120px]">
                 <Link href={"/"}>
                   <Image
                     src={"/assets/images/katanaLogo.webp"}
@@ -76,6 +76,7 @@ export default function Navbars() {
                     width={60}
                     height={60}
                     priority={true}
+                    className=" w-[40px] sm:w-[60px]"
                   />
                 </Link>
               </div>

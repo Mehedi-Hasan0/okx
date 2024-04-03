@@ -29,7 +29,7 @@ export default function Newsletter() {
                   <input
                     type="text"
                     id="email"
-                    className="min-w-[210px] sm:min-w-[300px] lg:min-w-[500px] h-[58px] sm:h-[68px] bg-[#000000]/90 outline-none rounded-tl-2xl rounded-bl-2xl pl-3"
+                    className="min-w-[210px] sm:min-w-[300px] lg:min-w-[500px] h-[58px] sm:h-[68px] bg-[#000000]/90 outline-none rounded-tl-2xl rounded-bl-2xl pl-3 text-white"
                   />
                   <button className="h-[40px] w-[70px] sm:h-[50px] bg-[#084B08] hover:bg-[#215f21] sm:px-5 mr-5 rounded-xl transition duration-500 ease-in flex justify-center items-center">
                     <Image
