@@ -146,7 +146,7 @@ export default function Lootbox() {
               //   once: true,
               // }}
             >
-              <h2 className=" flex items-center gap-1 sm:gap-5 text-2xl sm:text-3xl lg:text-[28px] xl:text-4xl 2xl:text-5xl font-khand my-8">
+              <h2 className=" flex items-center gap-1 sm:gap-5 text-2xl sm:text-3xl lg:text-[28px] xl:text-4xl 2xl:text-5xl font-khand my-6 sm:my-8">
                 <span className="text-white">Katana Inu</span>
                 <Image
                   src={"/assets/icons/x-shape.svg"}
