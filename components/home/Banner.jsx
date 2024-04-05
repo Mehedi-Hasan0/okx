@@ -40,7 +40,7 @@ export default function Banner() {
       {/* full width overlay */}
       <div className="bg-gradient-to-r from-black/10 to-black/40 absolute w-full h-full z-[2]" />
       {/* half width overlay for characters */}
-      <div className=" w-1/2 h-2/5 bg-gradient-to-b from-transparent to-black absolute bottom-0 right-0 z-[99] lg:block  hidden" />
+      <div className=" w-1/2 h-2/5 bg-gradient-to-b from-transparent to-black absolute bottom-0 right-0 z-20 lg:block hidden" />
       {/* main content */}
       <section className="flex flex-col-reverse lg:flex-row items-center justify-between main-container relative z-[15]">
         {/* texts and btn */}

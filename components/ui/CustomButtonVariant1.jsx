@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Button } from "./button";
-import Link from "next/link";
 
 // bgVariantType => depending on variant props bg color will change
 export default function CustomButtonVariant1({
@@ -110,9 +109,8 @@ export default function CustomButtonVariant1({
         />
 
         {/* button content */}
-        <Link
+        <div
           ref={buttonVariantRef}
-          href={"#"}
           className="w-full flex justify-center items-center"
         >
           <Button
@@ -125,7 +123,7 @@ export default function CustomButtonVariant1({
           >
             {textLabel}
           </Button>
-        </Link>
+        </div>
       </div>
     </div>
   );

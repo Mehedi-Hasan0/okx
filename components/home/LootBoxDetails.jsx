@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import CustomButtonVariant1 from "../ui/CustomButtonVariant1";
+import WhitelistButton from "../shared/WhitelistButton";
 
 export default function LootBoxDetails() {
   const textVariant = {
@@ -135,22 +135,9 @@ export default function LootBoxDetails() {
                     chance.
                   </p>
                 </div>
-                {/*  */}
+                {/* WHITELIST BTN */}
                 <div className="py-5 xl:py-9">
-                  {whiteListBtn.map((btn, i) => (
-                    <CustomButtonVariant1
-                      key={btn.bgColor}
-                      textLabel={btn.textLabel}
-                      bgColor={btn.bgColor}
-                      textSize={btn.textSize}
-                      innerBtnPadding={btn.innerBtnPadding}
-                      bgVariantType={btn.bgVariantType}
-                      hoverTextColor={btn.hoverTextColor}
-                      elementColor={btn.elementColor}
-                      hoverElementColor={btn.hoverElementColor}
-                      showFullLines={btn.showFullLines}
-                    />
-                  ))}
+                  <WhitelistButton isFullWidth={false} />
                 </div>
               </div>
             </div>
@@ -160,7 +147,7 @@ export default function LootBoxDetails() {
           </div>
 
           {/* right card */}
-          <div className="w-full lg:w-[50%] xl:w-[45%] px-6 sm:px-10 md:px-12 lg:pr-16 flex flex-col items-center gap-8 sm:gap-20 md:gap-32 pt-20 lg:pt-0 md:mt-16 justify-evenly">
+          <div className="w-full lg:w-[50%] xl:w-[45%] px-6 sm:px-10 md:px-12 lg:pr-16 flex flex-col items-center gap-8 sm:gap-20 md:gap-32 pt-8 sm:pt-20 lg:pt-0 md:mt-16 justify-evenly">
             {/* 1st card */}
             <div className="bg-[url('/assets/images/loot-box-detail-card-frame.png')]  bg-contain sm:bg-contain bg-no-repeat min-w-[340px] sm:min-w-[550px] md:min-w-[673px] lg:min-w-[460px] xl:min-w-[580px] xl:min-h-[300px] 2xl:min-w-[673px] 2xl:h-[261px] relative">
               <p className="text-white/70 text-xs sm:text-base md:text-xl lg:text-base py-8 px-5 sm:py-12 sm:px-10 md:py-12 md:px-10 lg:py-7 lg:px-6 xl:py-12 xl:px-10 2xl:py-16 2xl:px-14 max-w-[250px] sm:max-w-[390px] md:max-w-[498px] lg:max-w-[350px] xl:max-w-[398px] relative z-10 bottom-2 sm:bottom-3">

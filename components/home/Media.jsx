@@ -1,8 +1,12 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import CustomButtonVariant1 from "../ui/CustomButtonVariant1";
+
+import { useEffect, useRef, useState } from "react";
+import WhitelistButton from "../shared/WhitelistButton";
 
 export default function Media() {
   const textVariant = {
@@ -18,7 +22,7 @@ export default function Media() {
     },
   };
   return (
-    <section className="text-white overflow-hidden bg-[url('/assets/images/banner-bg-3.webp')] bg-cover bg-center pb-8 relative mt-8">
+    <section className="text-white overflow-hidden bg-[url('/assets/images/banner-bg-3.webp')] bg-cover bg-center sm:pb-8 relative sm:mt-8">
       <div className="main-container">
         <motion.div
           className="py-10 flex flex-col justify-center items-center"
@@ -85,20 +89,7 @@ export default function Media() {
           {/* white list button */}
           <div className="mt-7 flex justify-center">
             {/* white list btn */}
-            {whiteListBtn.map((btn, i) => (
-              <CustomButtonVariant1
-                key={btn.bgColor}
-                textLabel={btn.textLabel}
-                bgColor={btn.bgColor}
-                textSize={btn.textSize}
-                innerBtnPadding={btn.innerBtnPadding}
-                bgVariantType={btn.bgVariantType}
-                hoverTextColor={btn.hoverTextColor}
-                elementColor={btn.elementColor}
-                hoverElementColor={btn.hoverElementColor}
-                showFullLines={btn.showFullLines}
-              />
-            ))}
+            <WhitelistButton isFullWidth={false} />
           </div>
         </motion.div>
       </div>
