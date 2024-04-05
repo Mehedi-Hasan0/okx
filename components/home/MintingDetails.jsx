@@ -3,8 +3,8 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import CustomButtonVariant1 from "../ui/CustomButtonVariant1";
 import FullWidthBorder from "../shared/FullWidthBorder";
+import WhitelistButton from "../shared/WhitelistButton";
 
 export default function MintingDetails() {
   const [miningNumber, setMiningNumber] = useState(823);
@@ -78,9 +78,6 @@ export default function MintingDetails() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
-  // 383838 / 100
-  // 434242 / 12
 
   return (
     <section className="text-white overflow-hidden bg-[url('/assets/images/banner-bg-2.webp')] bg-cover bg-center mt-5 sm:mt-12 md:mt-14 lg:mt-20 relative">
@@ -304,21 +301,7 @@ export default function MintingDetails() {
                   {/* white list button */}
                   <div>
                     {/* white list btn */}
-                    {whiteListBtn.map((btn, i) => (
-                      <CustomButtonVariant1
-                        key={btn.bgColor}
-                        textLabel={btn.textLabel}
-                        bgColor={btn.bgColor}
-                        textSize={btn.textSize}
-                        innerBtnPadding={btn.innerBtnPadding}
-                        bgVariantType={btn.bgVariantType}
-                        hoverTextColor={btn.hoverTextColor}
-                        elementColor={btn.elementColor}
-                        hoverElementColor={btn.hoverElementColor}
-                        showFullLines={btn.showFullLines}
-                        isFullWidth={true}
-                      />
-                    ))}
+                    <WhitelistButton isFullWidth={true} />
                   </div>
 
                   <div className="flex items-center justify-between gap-5 md:gap-8 px-5">
