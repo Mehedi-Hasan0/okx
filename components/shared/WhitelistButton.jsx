@@ -36,7 +36,7 @@ export default function WhitelistButton({ isFullWidth = false }) {
       {/* BTN */}
       <div
         className={`relative p-1 w-full flex justify-center items-center ${
-          isFullWidth ? "w-full" : " w-full max-w-[280px]"
+          isFullWidth ? "w-full" : " w-full min-w-[210px] max-w-[270px]"
         }`}
       >
         {/* left lines/border */}
