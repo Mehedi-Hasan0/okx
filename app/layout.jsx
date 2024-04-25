@@ -14,8 +14,9 @@ const khand = Khand({
 });
 
 export const metadata = {
-  title: "OKX",
-  description: "Multiplayer on chain action game and minting platform - OKX",
+  title: "X layer",
+  description:
+    "Multiplayer on chain action game and minting platform - X Layer",
 };
 
 export default function RootLayout({ children }) {

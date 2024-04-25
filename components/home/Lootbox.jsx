@@ -164,7 +164,7 @@ export default function Lootbox() {
                   height={46}
                   className="w-7 sm:w-11"
                 />
-                <span className="text-green">OKX Chain</span> Loot Box
+                <span className="text-green">X Layer</span> Loot Box
               </h2>
             </motion.div>
             {/* left card */}

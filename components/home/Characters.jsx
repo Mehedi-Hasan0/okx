@@ -120,7 +120,7 @@ export default function Characters() {
             height={14}
           />
           <h5 className="uppercase text-base sm:text-lg md:text-xl font-bold tracking-[8px]">
-            OKX chain
+            X Layer
           </h5>
         </motion.div>
 

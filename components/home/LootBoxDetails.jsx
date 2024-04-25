@@ -58,7 +58,7 @@ export default function LootBoxDetails() {
                   height={46}
                   className="w-7 sm:w-11"
                 />
-                <span className="text-green">OKX Chain</span> Loot Box
+                <span className="text-green">X Layer</span> Loot Box
               </h2>
               {/*  */}
               <div className="mt-5 md:mt-4 2xl:mt-9 w-full">

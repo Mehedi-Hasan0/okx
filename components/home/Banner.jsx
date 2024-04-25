@@ -55,12 +55,12 @@ export default function Banner() {
         >
           <div className="flex flex-col justify-center items-center">
             <h1 className="uppercase font-bold leading-[0.9] banner-heading">
-              <span className="text-green">Okx</span> chain
+              <span className="text-green">X</span> Layer
             </h1>
             <div className="flex flex-col gap-2">
               <p className="text-base md:text-lg xl:text-2xl 2xl:text-3xl leading-[0.9] font-medium text-center">
                 Character in <span className="text-green">Katana Inu</span> game
-                on <span className="text-green">OKX Chain</span>
+                on <span className="text-green">X Layer</span>
               </p>
               <p className="text-xs md:text-sm xl:text-base 2xl:text-lg text-center text-[#DCDCDC] max-w-[450px] xl:max-w-[645px]">
                 We have designed the special in-game character to show our

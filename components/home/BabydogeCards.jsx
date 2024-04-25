@@ -58,7 +58,7 @@ export default function BabydogeCards() {
             height={14}
           />
           <h5 className="uppercase text-base sm:text-lg md:text-xl font-bold tracking-[8px]">
-            okx chain
+            x layer
           </h5>
         </motion.div>
 

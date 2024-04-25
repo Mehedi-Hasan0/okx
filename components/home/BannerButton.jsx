@@ -137,7 +137,7 @@ const logoData = [
     textLabel: "Kataninu",
   },
   {
-    icon: "/assets/icons/okx-logo.svg",
-    textLabel: "okx chain",
+    icon: "/assets/icons/x-layer.svg",
+    textLabel: "x layer",
   },
 ];
