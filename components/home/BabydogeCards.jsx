@@ -62,8 +62,8 @@ export default function BabydogeCards() {
           </h5>
         </motion.div>
 
-        <div className="flex flex-col-reverse lg:flex-row gap-5 sm:gap-10 items-center 2xl:px-28">
-          <div className="flex flex-col gap-7 sm:gap-10 relative z-[7] w-full lg:w-1/2">
+        <div className="flex flex-col-reverse lg:flex-row gap-5 sm:gap-10 items-center 2xl:mt-8">
+          <div className="flex flex-col gap-4 md:gap-7 xl:gap-10 relative z-[7] w-full lg:w-1/2">
             {babydogeCaracters.map((ch, i) => (
               <motion.div
                 key={i}
@@ -74,16 +74,37 @@ export default function BabydogeCards() {
                 // viewport={{
                 //   once: true,
                 // }}
+                className={`flex items-center gap-4 ${
+                  i === 1 ? "justify-start" : "justify-start lg:justify-end"
+                }`}
               >
-                <Image
-                  src={ch.img}
-                  alt=""
-                  width={644}
-                  height={181}
-                  className={`${i === 0 && "md:ml-10 xl:ml-20"} ${
-                    i === 2 && "md:ml-10 xl:ml-20"
-                  }`}
-                />
+                <div className="">
+                  <Image
+                    src={ch.img}
+                    alt=""
+                    width={200}
+                    height={200}
+                    className="lg:w-[90px] xl:w-[120px] 2xl:w-[200px]"
+                  />
+                </div>
+                <div className=" relative flex justify-center items-center ">
+                  <Image
+                    src={badgesBg[i].img}
+                    alt=""
+                    width={700}
+                    height={500}
+                    className={`${
+                      i === 1
+                        ? "lg:w-[300px] xl:w-[400px] 2xl:w-[600px] 2xl:h-[250px]"
+                        : "lg:w-[270px] xl:w-[320px] 2xl:w-[520px]"
+                    }`}
+                  />
+                  {/* <p className="absolute text-2xl">{badgesBg[i].label}</p> */}
+                  <div className="flex flex-col gap-1 2xl:gap-2 absolute text-sm sm:text-xl md:text-3xl lg:text-sm xl:text-lg 2xl:text-3xl pl-2 pr-4 text-gray-300">
+                    <p>Name: {badgesBg[i].name}</p>
+                    <p>Rarity: {badgesBg[i].rarity}</p>
+                  </div>
+                </div>
               </motion.div>
             ))}
           </div>
@@ -102,7 +123,7 @@ export default function BabydogeCards() {
               alt=""
               width={756}
               height={786}
-              className="relative bottom-7 sm:bottom-7 lg:ml-10 lg:bottom-16 z-[1] lg:right-0 mx-auto lg:mx-0"
+              className="relative bottom-7 sm:bottom-7 lg:ml-10 lg:bottom-16 z-[1] lg:right-0 mx-auto lg:mx-0 lg:w-[340px] xl:w-[500px] 2xl:w-[700px]"
             />
             <div className="block lg:hidden absolute bottom-0 left-0 w-full h-2/5 bg-gradient-to-b from-transparent to-black z-[2]" />
           </motion.div>
@@ -122,12 +143,30 @@ export default function BabydogeCards() {
 
 const babydogeCaracters = [
   {
-    img: "/assets/images/babydoge-card-1.webp",
+    img: "/assets/images/badges/badge-1.png",
   },
   {
-    img: "/assets/images/babydoge-card-2.webp",
+    img: "/assets/images/badges/badge-2.png",
   },
   {
-    img: "/assets/images/babdoge-card-3.webp",
+    img: "/assets/images/badges/badge-3.png",
+  },
+];
+
+const badgesBg = [
+  {
+    img: "/assets/images/badges/bg-1.png",
+    name: "CosmoKnight Baby Doge",
+    rarity: "Legendary",
+  },
+  {
+    img: "/assets/images/badges/bg-2.png",
+    name: " Dragon Baby Doge",
+    rarity: "Immortal",
+  },
+  {
+    img: "/assets/images/badges/bg-3.png",
+    name: "Samurai Baby Doge",
+    rarity: "Mythical",
   },
 ];
