@@ -131,13 +131,13 @@ export default function WeaponNft() {
                     <div
                       className={`${
                         activeSlide === i
-                          ? "from-[#f8c40663]"
+                          ? "from-[#00ff0056]"
                           : "from-[#8f8f8f58]"
                       } bg-gradient-to-b to-transparent p-5 rounded-sm flex flex-col gap-1 text-white max-w-[350px] relative z-40 mx-7 -mt-10 sm:-mt-16 md:-mt-0 md:mx-0`}
                     >
                       <h4
                         className={`text-base lg:text-lg 2xl:text-xl font-medium ${
-                          activeSlide === i ? "text-[#F8C306]" : "text-gray-300"
+                          activeSlide === i ? "text-[#00FF00]" : "text-gray-300"
                         }`}
                       >
                         {data.label}
